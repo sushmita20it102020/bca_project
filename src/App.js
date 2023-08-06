@@ -7,6 +7,7 @@ import { projectFirestore,doc,getDoc,getDocs,collection} from './firebase/config
 import './App.css';
 import { global_array } from './ReadData';
   function App() {
+    console.log(global_array)
 
 
   return (

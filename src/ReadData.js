@@ -8,3 +8,4 @@ const querySnapshot = await getDocs(collection(projectFirestore,"ChatbotData"))
    global_array.push(doc.data())
   })
 }
+ReadData()
