@@ -5,11 +5,8 @@ import ChatBot from 'react-simple-chatbot';
 // this is a api call from frontend to firestore database located at south east asia zone (mumbai region)
 import { projectFirestore,doc,getDoc,getDocs,collection} from './firebase/config';
 import './App.css';
-async function App() {
-  const querySnapshot = await getDocs(collection(projectFirestore,"ChatbotData"))
-  querySnapshot.forEach((doc)=>{
-    console.log(doc.id,"=>",doc.data())
-  })
+import { global_array } from './ReadData';
+  function App() {
 
 
   return (
@@ -57,13 +54,11 @@ async function App() {
         },
 
 
-
-
-
         {
           //this changes frequently
           id: '9',
-          message: '1. 100% scholarship for school toppers\n 2. 50% scholarship for school second topper\n 3. 25% compensation for HRDD nominees \n 4. 10% compensation for COI holders',
+          //message: '1. 100% scholarship for school toppers\n 2. 50% scholarship for school second topper\n 3. 25% compensation for HRDD nominees \n 4. 10% compensation for COI holders',
+          message:global_array[0][9],
           trigger:'2',
         },
         {
@@ -93,7 +88,8 @@ async function App() {
         {
           // this changes frequently
           id:'11',
-          message:'Bsc.Hospitality and tourism Management \n Msc.Hospitality and Tourism',
+          //message:'Bsc.Hospitality and tourism Management \n Msc.Hospitality and Tourism',
+          message:global_array[0][11],
           trigger:'2',
         
      
@@ -101,7 +97,8 @@ async function App() {
         {
           // this changes frequently
           id:'12',
-          message:'BCA(Bachelor of Computer Application) \n MCA(Master of Computer Application \n Bsc.IT',
+          //message:'BCA(Bachelor of Computer Application) \n MCA(Master of Computer Application \n Bsc.IT',
+          message:global_array[0][12],
           trigger:'2',
         },
         {
@@ -195,51 +192,64 @@ async function App() {
         {
           // this changes frequently
           id:'25',
-          message:'Semester:35,450 \n Annual:70,000',
+          //message:'Semester:35,450 \n Annual:70,000',
+          message:global_array[0][25],
           trigger:'2',
         },
         {
           // this changes frequently
           id:'26',
-          message:'(BCA)Semester:36,500 \n Annual:70,000 \n (MCA)Semester:65,063 Annual:1,45,500',
+         // message:'(BCA)Semester:36,500 \n Annual:70,000 \n (MCA)Semester:65,063 Annual:1,45,500',
+           message:global_array[0][26],
           trigger:'2',
         },
         {
           // this changes frequently
           id:'27',
-          message:'(BA)Semester:23,700 \n Annual:44,400 \n (MA)Semester:33,625\n Annual:64,250',
+          //message:'(BA)Semester:23,700 \n Annual:44,400 \n (MA)Semester:33,625\n Annual:64,250',
+           message:global_array[0][27],
           trigger:'2',
         },
         // this changes frequently
         {
           id:'28',
-          message:'(BBA) Semester:36,500 \n Annual:70,000 \n(MBA) Semester:74,250 \n Annual:1,45,500 \n (BCOM) Semester:23,700 \n Annual:52,750',
+          //message:'(BBA) Semester:36,500 \n Annual:70,000 \n(MBA) Semester:74,250 \n Annual:1,45,500 \n (BCOM) Semester:23,700 \n Annual:52,750',
+         message:global_array[0][28],
+
           trigger:'2',
         },
         // this changes frequently
 
         {
           id:'29',
-          message:'(Bsc BOTANY) Semester:27,075 \n Annual:51,150 \n (Msc BOTANY) Semester:40,000\n Annual:77,000 \n(Bsc CHEMISTRY) Semester:27,075\n Annual:51,150\n (Msc CHEMISTRY) Semester:40,000]\n Annual:77,000 \n (Bsc ZOOLOGY) Semester:27,075 \n Annual:51,150 \n (Msc ZOOLOGY) Semester:40,000 \n Annual:77,000',
+         // message:'(Bsc BOTANY) Semester:27,075 \n Annual:51,150 \n (Msc BOTANY) Semester:40,000\n Annual:77,000 \n(Bsc CHEMISTRY) Semester:27,075\n Annual:51,150\n (Msc CHEMISTRY) Semester:40,000]\n Annual:77,000 \n (Bsc ZOOLOGY) Semester:27,075 \n Annual:51,150 \n (Msc ZOOLOGY) Semester:40,000 \n Annual:77,000',
+           message:global_array[0][29],
+
           trigger:'2',
           
         },
         // this changes  frequently
         {
           id:'30',
-          message:'Semester:58,000 \n Annual:1,13,000',
+         // message:'Semester:58,000 \n Annual:1,13,000',
+         message:global_array[0][30],
+
           trigger:'2',
         },
         {
           // this too changes frequently
           id:'31',
-          message:'(Sociology) Semester:23,700 \n Annual:44,400 \n (History) Semester:23,700 \n Annual:44,400 \n (Political Science) Semester:23,700 \n Annual:44,400\n(Economics) Semester:23,700 \n Annual:44,400', 
+         // message:'(Sociology) Semester:23,700 \n Annual:44,400 \n (History) Semester:23,700 \n Annual:44,400 \n (Political Science) Semester:23,700 \n Annual:44,400\n(Economics) Semester:23,700 \n Annual:44,400', 
+         message:global_array[0][31],
+
           trigger:'2',
         },
         {
           // this too changes 
           id:'32',
-          message:'Semester:29,700\n Annual:56,400',
+          //message:'Semester:29,700\n Annual:56,400',
+         message:global_array[0][32],
+
           trigger:'2',
         },
           

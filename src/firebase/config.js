@@ -12,4 +12,10 @@ const firebaseConfig = {
   appId: "1:1060272548963:web:3bcdbf85f4b2643ab99c56"
 };
 
+ // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const projectFirestore = getFirestore(app)
+  const projectAuth = getAuth(app)
+  const projectStorage=getStorage(app)
+
  export {app,query,where,getDocs,getDoc,signInWithPopup,GoogleAuthProvider,doc,updateDoc,addDoc,setDoc,ref,uploadBytes, getDownloadURL,signInWithCredential,projectFirestore,projectStorage, projectAuth, serverTimestamp,onAuthStateChanged,signInWithEmailAndPassword,signOut,createUserWithEmailAndPassword,collection,updateProfile,onSnapshot,sendPasswordResetEmail} 
