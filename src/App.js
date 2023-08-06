@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
+import 
 import './App.css';
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
 
 
         {
+          //this changes frequently
           id: '9',
           message: '1. 100% scholarship for school toppers\n 2. 50% scholarship for school second topper\n 3. 25% compensation for HRDD nominees \n 4. 10% compensation for COI holders',
           trigger:'2',
@@ -69,6 +71,7 @@ function App() {
 
         {
           id: '6',
+          // this changes frequently
           options: [
             { value: 'HTM', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: '11' },
             { value: 'IT', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: '12' },
@@ -82,6 +85,7 @@ function App() {
           
         },
         {
+          // this changes frequently
           id:'11',
           message:'Bsc.Hospitality and tourism Management \n Msc.Hospitality and Tourism',
           trigger:'2',
@@ -89,6 +93,7 @@ function App() {
      
         },
         {
+          // this changes frequently
           id:'12',
           message:'BCA(Bachelor of Computer Application) \n MCA(Master of Computer Application \n Bsc.IT',
           trigger:'2',
@@ -182,31 +187,38 @@ function App() {
 
         },
         {
+          // this changes frequently
           id:'25',
           message:'Semester:35,450 \n Annual:70,000',
           trigger:'2',
         },
         {
+          // this changes frequently
           id:'26',
           message:'(BCA)Semester:36,500 \n Annual:70,000 \n (MCA)Semester:65,063 Annual:1,45,500',
           trigger:'2',
         },
         {
+          // this changes frequently
           id:'27',
           message:'(BA)Semester:23,700 \n Annual:44,400 \n (MA)Semester:33,625\n Annual:64,250',
           trigger:'2',
         },
+        // this changes frequently
         {
           id:'28',
           message:'(BBA) Semester:36,500 \n Annual:70,000 \n(MBA) Semester:74,250 \n Annual:1,45,500 \n (BCOM) Semester:23,700 \n Annual:52,750',
           trigger:'2',
         },
+        // this changes frequently
+
         {
           id:'29',
           message:'(Bsc BOTANY) Semester:27,075 \n Annual:51,150 \n (Msc BOTANY) Semester:40,000\n Annual:77,000 \n(Bsc CHEMISTRY) Semester:27,075\n Annual:51,150\n (Msc CHEMISTRY) Semester:40,000]\n Annual:77,000 \n (Bsc ZOOLOGY) Semester:27,075 \n Annual:51,150 \n (Msc ZOOLOGY) Semester:40,000 \n Annual:77,000',
           trigger:'2',
           
         },
+        // this changes  frequently
         {
           id:'30',
           message:'Semester:58,000 \n Annual:1,13,000',
