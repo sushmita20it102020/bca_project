@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
+// this is a api call from frontend to firestore database located at south east asia zone (mumbai region)
 import 
 import './App.css';
 function App() {
