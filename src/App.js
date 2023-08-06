@@ -3,9 +3,15 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
 // this is a api call from frontend to firestore database located at south east asia zone (mumbai region)
-import 
+import { projectFirestore,doc,getDoc,getDocs,collection} from './firebase/config';
 import './App.css';
-function App() {
+async function App() {
+  const querySnapshot = await getDocs(collection(projectFirestore,"ChatbotData"))
+  querySnapshot.forEach((doc)=>{
+    console.log(doc.id,"=>",doc.data())
+  })
+
+
   return (
     <>
 
