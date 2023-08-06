@@ -225,6 +225,7 @@ function App() {
           trigger:'2',
         },
         {
+          // this too changes frequently
           id:'31',
           message:'(Sociology) Semester:23,700 \n Annual:44,400 \n (History) Semester:23,700 \n Annual:44,400 \n (Political Science) Semester:23,700 \n Annual:44,400\n(Economics) Semester:23,700 \n Annual:44,400', 
           trigger:'2',
