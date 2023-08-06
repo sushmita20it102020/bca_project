@@ -11,44 +11,40 @@ function App() {
         {
           id: '1',
           message: 'Hi! I am SRMBOT. Welcome to SRM. Please type assist.',
-          trigger: 'assist',
+          trigger: '2',
         },
         {
-          id: 'assist',
+          id: '2',
           user: true,
           trigger: '3',
         },
-        {
-          id: 'fallback',
-          message: 'Sorry, I can only assist if you type "assist". Please type "assist" to continue.',
-          trigger: 'assist',
-        },
+        
         {
           id: '3',
           message: 'These are the areas in which I can assist',
-          trigger: 'areas',
+          trigger: '4',
         },
         {
-          id: 'areas',
+          id: '4',
           options: [
-            { value: 'admission', label: 'admission', trigger: 'add' },
-            { value: 'courses', label: 'course', trigger: 'cou' },
-            { value: 'fee details', label: 'fee details', trigger: 'fee' },
+            { value: 'admission', label: 'admission', trigger: '5' },
+            { value: 'courses', label: 'course', trigger: '6' },
+            { value: 'fee details', label: 'fee details', trigger: '7' },
           ],
         },
         {
-          id: 'add',
+          id: '5',
           options: [
-            { value: 'How to apply for admission?', label: 'How to apply for admission?', trigger: 'req' },
-            { value: 'scholarship', label: 'Scholarships Available ', trigger: 'sch' },
-            { value: 'Why SRM?', label: 'Why Srm?', trigger: 'why' },
+            { value: 'Required Documents', label: 'Required Documents', trigger: '8' },
+            { value: 'scholarship', label: 'Scholarships Available ', trigger: '9' },
+            { value: 'Why SRM?', label: 'Why Srm?', trigger: '10' },
           ],
         },
         {
-          id: 'req',
+          id: '8',
           message: '1. Birth certificate \n2. Pass certificate(X and XII)\n3. Marksheet(X and XII) \n4. Aadhar card \n5. Passport size photos \n 6. Migration and transfer certificate\n7.Character Certificate\n8.COI if applicable\n9.Social status(caste certificate),\n10.Passport size photos-3nos',
 
-          trigger: 'assist',
+          trigger: '2',
         },
 
 
@@ -56,14 +52,14 @@ function App() {
 
 
         {
-          id: 'sch',
-          message: '100% for school toppers\n50%for school second topper\n25%for HRDD nominees \n 10%for COI holders',
-          trigger:'assist',
+          id: '9',
+          message: '1. 100% scholarship for school toppers\n 2. 50% scholarship for school second topper\n 3. 25% compensation for HRDD nominees \n 4. 10% compensation for COI holders',
+          trigger:'2',
         },
         {
-          id: 'why',
+          id: '10',
           message: '1.Sound Infrastructure\n2.Wifi Enabled Campus\n3.Experienced Faculty with International Exposure\n4.State-of-the art facilities\n5.High placement records\n6.well equipped labs\n7.hostel accomodations',
-          trigger:'assist',
+          trigger:'2',
         },
 
 
@@ -71,159 +67,159 @@ function App() {
 
 
         {
-          id: 'cou',
+          id: '6',
           options: [
-            { value: 'HTM', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: 'htm1' },
-            { value: 'IT', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: 'IT1' },
-            { value: 'LANGUAGE', label: 'SCHOOL OF LANGUAGE', trigger: 'lang' },
-            {value:'management',label:'SCHOOL OF MANAGEMENT AND COMMERCE',trigger:'mngment'},
-            {value:'science',label:'SCHOOL OF BASIC SCIENCE',trigger:'sci'},
-            {value:'public health',label:'SCHOOL OF PUBLIC HEALTH',trigger:'public health1'},
-            {value:'social science',label:'SCHOOL OF SOCIAL SCIENCE',trigger:'social sci'},
-            {value:'journalism',label:'SCHOOL OF JOURNALISM AND MASS COMMUNICATION',trigger:'jour'},
+            { value: 'HTM', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: '11' },
+            { value: 'IT', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: '12' },
+            { value: 'LANGUAGE', label: 'SCHOOL OF LANGUAGE', trigger: '13' },
+            {value:'management',label:'SCHOOL OF MANAGEMENT AND COMMERCE',trigger:'14'},
+            {value:'science',label:'SCHOOL OF BASIC SCIENCE',trigger:'15'},
+            {value:'public health',label:'SCHOOL OF PUBLIC HEALTH',trigger:'16'},
+            {value:'social science',label:'SCHOOL OF SOCIAL SCIENCE',trigger:'17'},
+            {value:'journalism',label:'SCHOOL OF JOURNALISM AND MASS COMMUNICATION',trigger:'18'},
           ],
           
         },
         {
-          id:'htm1',
+          id:'11',
           message:'Bsc.Hospitality and tourism Management \n Msc.Hospitality and Tourism',
-          trigger:'assist',
+          trigger:'2',
         
      
         },
         {
-          id:'IT1',
+          id:'12',
           message:'BCA(Bachelor of Computer Application) \n MCA(Master of Computer Application \n Bsc.IT',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'lang',
+          id:'13',
           message:'BA in English \n MA in English',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'mngment',
+          id:'14',
           options: [
-            { value: 'Management', label: 'DEPT OF MANAGEMENT', trigger: 'management1' },
-            { value: 'business', label: 'DEPT OF COMMERCE', trigger: 'business1' },
+            { value: 'Management', label: 'DEPT OF MANAGEMENT', trigger: '19' },
+            { value: 'business', label: 'DEPT OF COMMERCE', trigger: '20' },
           ]
 
           
         },
         {
-          id:'management1',
+          id:'19',
           message:'BBA(Bachelor in Business Administration)\nMBA(Master in Business Administration',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'business1',
+          id:'20',
           message:'BCOM(Bachelor in Commerce)\nMCOM(Master in Commerce)',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'sci',
+          id:'15',
           options: [
-            { value: 'chem', label: 'DEPT OF CHEMISTRY', trigger: 'chemistry' },
-            { value: 'phy', label: 'DEPT OF PHYSICS', trigger: 'physics' },
-            {value:'bot',label:'DEPT OF BOTANY',trigger:'Botany'},
-            {value:'zoo',label:'DEPT OF ZOOLOGY',trigger:'zoology'},
+            { value: 'chem', label: 'DEPT OF CHEMISTRY', trigger: '21' },
+            { value: 'phy', label: 'DEPT OF PHYSICS', trigger: '22' },
+            {value:'bot',label:'DEPT OF BOTANY',trigger:'23'},
+            {value:'zoo',label:'DEPT OF ZOOLOGY',trigger:'24'},
           
             
           ]
 
         },
         {
-          id:'chemistry',
+          id:'21',
           message:'Bsc Chemistry\nMsc Chemistry',
-          trigger:'assist',
+          trigger:'2',
         
         },
         {
-          id:'physics',
+          id:'22',
           message:'Bsc Physics \n Msc Physics',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'Botany',
+          id:'23',
           message:' Bsc.Botany \n Msc.Botany',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'zoology',
+          id:'24',
           message:'Bsc.Zoology \n Msc.Zoology',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'public health1',
+          id:'16',
           message:' Master of Public Health',
-          trigger:'assist',
+          trigger:'2',
 
         },
         {
-          id:'social sci',
+          id:'17',
           message:' B.A. Sociology, History, Economics and Political Science',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'jour',
+          id:'18',
           message:' BA. (JAM) Bachelor in Journalism and Mass Communication',
-          trigger:'assist',
+          trigger:'2',
 
         },
         {
-        id:'fee',
+        id:'7',
         options: [
-          { value: 'HTMfee', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: 'htm2' },
-          { value: 'ITfee', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: 'IT2' },
-          { value: 'LANGUAGEfee', label: 'SCHOOL OF LANGUAGE', trigger: 'lang2' },
-          {value:'managementfee',label:'SCHOOL OF MANAGEMENT AND COMMERCE',trigger:'mngment2'},
-          {value:'sciencefee',label:'SCHOOL OF BASIC SCIENCE',trigger:'sci2'},
-          {value:'public healthfee',label:'SCHOOL OF PUBLIC HEALTH',trigger:'public health2'},
-          {value:'social sciencefee',label:'SCHOOL OF SOCIAL SCIENCE',trigger:'social sci2'},
-          {value:'journalismfee',label:'SCHOOL OF JOURNALISM AND MASS COMMUNICATION',trigger:'jour2'},
+          { value: 'HTMfee', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: '25' },
+          { value: 'ITfee', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: '26' },
+          { value: 'LANGUAGEfee', label: 'SCHOOL OF LANGUAGE', trigger: '27' },
+          {value:'managementfee',label:'SCHOOL OF MANAGEMENT AND COMMERCE',trigger:'28'},
+          {value:'sciencefee',label:'SCHOOL OF BASIC SCIENCE',trigger:'29'},
+          {value:'public healthfee',label:'SCHOOL OF PUBLIC HEALTH',trigger:'30'},
+          {value:'social sciencefee',label:'SCHOOL OF SOCIAL SCIENCE',trigger:'31'},
+          {value:'journalismfee',label:'SCHOOL OF JOURNALISM AND MASS COMMUNICATION',trigger:'32'},
         ],
 
         },
         {
-          id:'htm2',
+          id:'25',
           message:'Semester:35,450 \n Annual:70,000',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'IT2',
+          id:'26',
           message:'(BCA)Semester:36,500 \n Annual:70,000 \n (MCA)Semester:65,063 Annual:1,45,500',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'lang2',
+          id:'27',
           message:'(BA)Semester:23,700 \n Annual:44,400 \n (MA)Semester:33,625\n Annual:64,250',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'mngment2',
+          id:'28',
           message:'(BBA) Semester:36,500 \n Annual:70,000 \n(MBA) Semester:74,250 \n Annual:1,45,500 \n (BCOM) Semester:23,700 \n Annual:52,750',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'sci2',
+          id:'29',
           message:'(Bsc BOTANY) Semester:27,075 \n Annual:51,150 \n (Msc BOTANY) Semester:40,000\n Annual:77,000 \n(Bsc CHEMISTRY) Semester:27,075\n Annual:51,150\n (Msc CHEMISTRY) Semester:40,000]\n Annual:77,000 \n (Bsc ZOOLOGY) Semester:27,075 \n Annual:51,150 \n (Msc ZOOLOGY) Semester:40,000 \n Annual:77,000',
-          trigger:'assist',
+          trigger:'2',
           
         },
         {
-          id:'public health2',
+          id:'30',
           message:'Semester:58,000 \n Annual:1,13,000',
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'social sci2',
+          id:'31',
           message:'(Sociology) Semester:23,700 \n Annual:44,400 \n (History) Semester:23,700 \n Annual:44,400 \n (Political Science) Semester:23,700 \n Annual:44,400\n(Economics) Semester:23,700 \n Annual:44,400', 
-          trigger:'assist',
+          trigger:'2',
         },
         {
-          id:'jour2',
+          id:'32',
           message:'Semester:29,700\n Annual:56,400',
-          trigger:'assist',
+          trigger:'2',
         },
           
           
