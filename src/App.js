@@ -1,19 +1,29 @@
-
 import React, { useState, useEffect } from 'react';
+import "./App.css"
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
+import {ReadData,global_array} from "./ReadData"
 // this is a api call from frontend to firestore database located at south east asia zone (mumbai region)
 import { projectFirestore,doc,getDoc,getDocs,collection} from './firebase/config';
-import './App.css';
-import { global_array } from './ReadData';
   function App() {
-    console.log(global_array)
+     const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      await ReadData();
+      setIsLoading(false);
+    };
+    fetchData();
+  }, []);
+    
 
   return (
     <>
-
-    <ChatBot
+    <div>
+      {isLoading ? (
+        <p>Loading data...</p>
+      ):
+        <  ChatBot
       steps={[
         {
           id: '1',
@@ -254,15 +264,12 @@ import { global_array } from './ReadData';
           trigger:'2',
         },
           
-          
-          
-
-      
-        
-       
+ 
       ]} />
+    }
 
 
+</div>
 </>
 
 
