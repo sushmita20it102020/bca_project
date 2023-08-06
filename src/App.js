@@ -71,7 +71,6 @@ function App() {
 
         {
           id: '6',
-          // this changes frequently
           options: [
             { value: 'HTM', label: 'SCHOOL OF HOSPITALITY AND TOURISM', trigger: '11' },
             { value: 'IT', label: 'SCHOOL OF INFORMATION TECHNOLOGY ', trigger: '12' },
@@ -231,6 +230,7 @@ function App() {
           trigger:'2',
         },
         {
+          // this too changes 
           id:'32',
           message:'Semester:29,700\n Annual:56,400',
           trigger:'2',
